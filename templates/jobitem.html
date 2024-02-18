@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-11">
+  <h4 class="mb-0">{{job['title']}}</h4>
+  {% if 'sallary' in job%}
+    <div>
+      <b>Location: </b> {{job['location']}}
+    </div>
+    <div class="mb-3">
+      <b>Salary: </b>{{job['sallary']}}
+    </div>
+  {% else %}
+    <div class='mb-3'>
+      <b>Location: </b> {{job['location']}}
+    </div>
+  {% endif %}
+  </div>
+  <div class="col-1">
+    {% if 'sallary' in job%}
+      <button type="button" class="btn btn-success mt-3">Apply</button>
+    {% else %}
+      <button type="button" class="btn btn-success mt-2">Apply</button>
+    {% endif %}
+  </div>
+  <hr>
+</div>
