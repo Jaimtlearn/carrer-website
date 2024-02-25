@@ -29,10 +29,10 @@ def Home():
   return render_template("home.html", jobs=Jobs)
 
 
-@app.route('/api/jobs')
+@app.route('/api/Jobs')
 def data():
   return jsonify(Jobs)
 
 
 if __name__ == "__main__":
-  app.run(host="0.0.0.0")
+  app.run(host="0.0.0.0", debug=True)

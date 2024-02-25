@@ -16,9 +16,9 @@
   </div>
   <div class="col-1">
     {% if 'sallary' in job%}
-      <button type="button" class="btn btn-success mt-3">Apply</button>
+      <a href="mailto:xyz@gmail.com?subject=Application for {{job['title']}}" type="button" class="btn btn-success mt-3">Apply</a>
     {% else %}
-      <button type="button" class="btn btn-success mt-2">Apply</button>
+      <a href="mailto:xyz@gmail.com?subject=Application for {{job['title']}}" type="button" class="btn btn-success mt-2">Apply</a>
     {% endif %}
   </div>
   <hr>

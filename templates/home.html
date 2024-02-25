@@ -15,6 +15,7 @@
   </style>
 </head>
 <body>
+  {% include 'nav.html' %}
   <div class="container">
     <h1 class="text-center mt-2 mb-4">JCarrers</h1>
     <hr>
@@ -22,10 +23,17 @@
     
     <h2 class="text-center mt-2 mb-4">About</h2>
     <hr>
-    <p class="lead">In the heart of the bustling city, amidst the cacophony of honking horns and hurried footsteps, lies a quaint little bookstore. Its weathered sign swings gently in the breeze, announcing its presence to the world. Inside, the shelves are adorned with an eclectic mix of books, each containing stories waiting to be discovered. The scent of old paper mingles with the aroma of freshly brewed coffee, creating an atmosphere that invites patrons to linger.
-    <br>
-    Meanwhile, in a distant galaxy, a lone explorer embarks on a journey through the cosmos. Their spaceship glides gracefully through the vast expanse of space, navigating past shimmering nebulae and distant stars. With each passing moment, they venture further into the unknown, driven by an insatiable thirst for knowledge and adventure.
-    </p>
+    <div class="row">
+      <div class="col-md-7">
+        <p class="lead">In the heart of the bustling city, amidst the cacophony of honking horns and hurried footsteps, lies a quaint little bookstore. Its weathered sign swings gently in the breeze, announcing its presence to the world. Inside, the shelves are adorned with an eclectic mix of books, each containing stories waiting to be discovered. The scent of old paper mingles with the aroma of freshly brewed coffee, creating an atmosphere that invites patrons to linger.
+        Meanwhile, in a distant galaxy, a lone explorer embarks on a journey through the cosmos. Their spaceship glides gracefully through the vast expanse of space, navigating past shimmering nebulae and distant stars. With each passing moment, they venture further into the unknown, driven by an insatiable thirst for knowledge and adventure.
+        </p>
+      </div>
+      <div class="d-none d-md-block col-md-5">
+        <img src="./static/worker.jpeg" alt="Working" style="height:320px; width: 100%; object-fit: cover;">
+      </div>
+    <div>
+    
     
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <!-- <p class="text-center lead">TODO - Show the jobs here</p> -->
@@ -38,4 +46,5 @@
     </div>
   </div>
 </body>
+  {% include 'footer.html' %}
 </html>
